@@ -177,7 +177,7 @@ body {
     right: 0px;
   }
   .shop img {
-    margin-left: auto;
+    height: 200px !important;
   }
   .shop .item-holder {
     z-index: 1;
