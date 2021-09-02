@@ -4,19 +4,25 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth !important;
 }
 .body {
-  padding: 20px;
+  padding: 0 20px;
   width: 100%;
   max-width: 1000px;
   margin: auto;
   position: relative;
+  font-family: "Poppins", sans-serif;
 }
 .navbar {
   background-color: #0f0f10;
   z-index: 1;
 }
-.navbar-nav .nav-item .nav-link {
+.nav-item {
+  margin-right: 30px;
+  cursor: pointer;
+}
+.navbar-nav .nav-item {
   background: linear-gradient(rgba(255, 255, 255, 0.5), #191919);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -24,7 +30,23 @@ body {
   margin-right: 30px;
   font-weight: 500;
 }
-.navbar-nav .nav-item .nav-link:hover {
+.navbar-nav .menu-home {
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+.navbar-nav .menu-specs {
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+.navbar-nav .menu-case {
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+.navbar-nav .menu-products {
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+.navbar-nav .nav-item:hover {
   background: white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -87,7 +109,7 @@ body {
   position: relative;
   width: 100%;
   max-width: 700px;
-  margin-top: 150px !important;
+  padding-top: 150px !important;
   height: fit-content;
 }
 .specs h1 {
@@ -95,6 +117,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 80px;
+  font-weight: 900;
 }
 .specs img {
   height: 340px;
@@ -112,7 +135,7 @@ body {
   position: relative;
   width: 100%;
   max-width: 600px;
-  margin-top: 150px !important;
+  padding-top: 150px !important;
   height: fit-content;
 }
 .case h1 {
@@ -120,6 +143,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 80px;
+  font-weight: 900;
 }
 .case img {
   height: 430px;
@@ -185,6 +209,9 @@ body {
   .shop .item-holder {
     z-index: 1;
   }
+  .products .item-holder {
+    grid-gap: 30px 10px !important;
+  }
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
   .home img {
@@ -235,4 +262,83 @@ body {
 }
 .shop .item-holder {
   padding: 40px 0px;
+}
+.products {
+  padding-top: 150px !important;
+}
+.products h1 {
+  background: linear-gradient(rgba(255, 255, 255, 0.5), #191919);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 80px;
+  text-align: center;
+  font-weight: 900;
+}
+.products .item-holder .card {
+  background-color: #181a1b;
+  width: 162px;
+  height: 152px;
+  border: none;
+  border-radius: 10px;
+}
+.products .item-holder .card button {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  height: 35px;
+  width: 35px;
+  margin-left: auto;
+}
+.products .item-holder .card button:hover {
+  background-color: #171718;
+  transition: 0.2s;
+}
+.products .item-holder .card img {
+  margin-top: -60px !important;
+  width: 100px;
+  margin: auto;
+}
+.products .item-holder {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(162px, 1fr));
+  grid-gap: 30px 30px;
+}
+.products .item-holder .row div {
+  margin-right: auto;
+}
+.products .item-holder .row {
+  margin: 0 0;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.products .item-holder .card h4 {
+  font-size: 13px;
+  color: white;
+  font-weight: bolder;
+}
+button {
+  outline: none !important;
+}
+.products .item-holder .card span {
+  font-size: 13px;
+  color: #a8abac;
+  font-weight: bolder;
+}
+.theend {
+  width: 100%;
+  max-width: 1000px;
+}
+.theend {
+  height: 35px;
+  width: 35px;
+  margin-top: 150px !important;
+}
+.gap {
+  height: 550px;
+  margin: auto;
+  width: 1px;
+}
+section {
+  box-sizing: border-box;
 }
